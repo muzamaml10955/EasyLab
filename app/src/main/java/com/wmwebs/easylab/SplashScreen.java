@@ -10,14 +10,14 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 
 public class SplashScreen extends AppCompatActivity {
-    int status = 0;
-    Handler handler = new Handler();
-    Dialog dialog;
-    ProgressBar text;
-    TextView text2;
-    ProgressBar progressBar;
-    TextView textView;
-    Intent intent;
+ //   int status = 0;
+  //  Handler handler = new Handler();
+ ///   Dialog dialog;
+//    ProgressBar text;
+ //   TextView text2;
+ //   ProgressBar progressBar;
+  //  TextView textView;
+  //  Intent intent;
 
     private Handler mWaitHandler = new Handler();
     @Override
@@ -39,7 +39,6 @@ public class SplashScreen extends AppCompatActivity {
                     //Go to next page i.e, start the next activity.
                     Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                     startActivity(intent);
-
                     //Let's Finish Splash Activity since we don't want to show this when user press back button.
                     finish();
                 } catch (Exception ignored) {
@@ -111,6 +110,10 @@ public class SplashScreen extends AppCompatActivity {
 
         }
 */
+
+
+
+
 
 
 

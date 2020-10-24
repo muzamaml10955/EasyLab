@@ -10,21 +10,36 @@
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-        <androidx.appcompat.widget.Toolbar
+        android:theme="@style/AppTheme.AppBarOverlay"
+        >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+>     <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@color/design_default_color_background"
-           android:foreground="@drawable/toolabr"
+            android:background="#FFFFFF"
             android:clickable="true"
+            android:foreground="@drawable/toolabr"
             android:gravity="center"
             android:theme="@style/AppTheme.AppBarOverlay"
-
             app:navigationIcon="@drawable/hamburger"
-            app:popupTheme="@style/AppTheme.NoActionBar" />
+            app:popupTheme="@style/AppTheme.NoActionBar"
+        />
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
 
+
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:id="@+id/sharebutton"
+            android:background="@drawable/sharebutton"
+            android:layout_margin="10dp"
+android:layout_alignRight="@+id/toolbar"
+            />
+</RelativeLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
     <include layout="@layout/content_main" />
